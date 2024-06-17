@@ -1,0 +1,77 @@
+.calendar-container {
+  width: 35em;
+  margin: 2em auto 1em auto; /* Center horizontally */
+  height: 18em; /* Set a fixed height */
+  overflow: hidden; /* Hide any overflow */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.custom-calendar .react-calendar {
+  width: 60%;
+  padding-bottom: 5%;
+}
+
+.custom-calendar .react-calendar__tile {
+  border-radius: 1em;
+  width: 60%;
+  font-size: 1.5em;
+}
+
+.react-calendar__month-view__weekdays {
+  margin-bottom: 1%;
+}
+
+.custom-calendar .react-calendar__month-view {
+  width: 100%;
+  margin-bottom: 1%;
+  padding-bottom: 1%;
+}
+
+.custom-calendar .react-calendar__navigation .react-calendar__navigation__label {
+  width: 60%;
+  border-radius: 1em;
+  margin: 0 10% 2.5%;
+  font-size: 1.5em;
+}
+
+.custom-calendar .react-calendar__navigation button {
+  width: 10%;
+  border-radius: 1em;
+  font-size: 1.5em;
+}
+
+.custom-calendar .react-calendar__navigation button:disabled {
+  width: 10%;
+  padding-bottom: 5%;
+}
+
+.blue-tile {
+  background-color: blue; /* Set the background color as desired */
+  color: white; /* Set the text color */
+}
+
+.green-tile {
+  background-color: green; /* Set the background color as desired */
+  color: white; /* Set the text color */
+}
+
+.orange-tile {
+  background-color: orange; /* Set the background color as desired */
+  color: white; /* Set the text color */
+}
+
+.red-tile {
+  background-color: red; /* Set the background color as desired */
+  color: white; /* Set the text color */
+}
+
+.react-calendar__navigation__arrow.react-calendar__navigation__next2-button,
+.react-calendar__navigation__arrow.react-calendar__navigation__prev2-button {
+  display: none; /* Hide both buttons for incrementing and decrementing the year */
+}
+
+.info {
+  width: 50%;
+}

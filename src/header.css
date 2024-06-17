@@ -1,0 +1,74 @@
+.header {
+  background-color: #484848; /* Assuming green background for the header */
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Adjust padding as needed */
+  position: relative; /* Ensure dropdown positioning is relative to the header */
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.oval-container {
+  border-radius: 50%;
+  border: 2px solid #000;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg {
+  width: 24px;
+  height: 24px;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 20px; /* Align to the right edge of the header */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 3; /* Ensure dropdown is above header */
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+.dropdown-content div {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+.dropdown-content div:hover {
+  background-color: #f1f1f1;
+}
+
+.custom-link {
+  color: black;
+  text-decoration: none;
+}
+
+.signout-btn {
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.eventify-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: black; /* Text color set to black */
+}

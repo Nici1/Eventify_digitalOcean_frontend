@@ -1,0 +1,292 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+
+}
+
+
+/* Set the root font size */
+html {
+  font-size: 75%; /* 1rem = 10px, so 62.5% makes 1rem = 10px */
+}
+
+/* Define font sizes using rem units */
+h1 {
+  font-size: 2.4rem; /* 24px */
+}
+
+h3 {
+  font-size: 1.8rem; /* 18px */
+}
+
+p, li, div, a {
+  font-size: 1.6rem; /* 16px */
+}
+
+
+
+
+.login-element, .register-element, .venue-element {
+    border-radius:2em;
+    margin: 0.5em;
+   
+}
+
+.description-input {
+  height: 7em;
+  border-radius:1em;
+  margin: 0.5em;
+}
+
+.Form {
+
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: stretch;
+    width: 40%;
+   margin: 5%;
+   
+ 
+}
+
+.LoginPage, .RegisterPage, .VenuePage {
+    display: flex;
+   flex-direction: column;
+  
+   justify-content: center;
+   align-items: center;
+   margin: 15%;
+}
+
+.User-Selector{
+
+    display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.selector-input {
+    margin: 1%;
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+
+
+.venue-list {
+  display: flex; /* Use flexbox layout */
+  flex-wrap: wrap;
+  align-items: stretch; /* Stretch items vertically to fill the container */
+  border-style: solid;
+  border-radius: 2.5em;
+  margin: 0.5em;
+  height: 400px;
+}
+
+
+
+.desc {
+  flex: 1; /* Allow the text to grow and take up remaining space */
+}
+
+.list-image {
+  padding: 1%;
+  flex: 0 0 30%; /* Set the image width to 30% and prevent it from growing or shrinking */
+  max-width: 90%; /* Adjust this value as needed */
+  height: 100%;
+ 
+  overflow: hidden; /* Ensure content inside .list-image does not overflow */
+}
+
+
+.list-image-events {
+  padding: 1%;
+  flex: 0 0 90%; /* Set the image width to 30% and prevent it from growing or shrinking */
+  max-width: 90%; /* Adjust this value as needed */
+  height: 100%;
+ 
+  overflow: hidden; /* Ensure content inside .list-image does not overflow */
+}
+
+
+.list-image-events img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the container without distortion */
+  border-radius: 1em;
+}
+
+.list-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the container without distortion */
+  border-radius: 1em;
+}
+
+
+.venue-container {
+  display: flex;
+  width: 100%;
+}
+
+.content-section {
+  flex-grow: 1;
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 1%;
+  box-sizing: border-box;
+  /* Remove height property */
+  z-index: 0;
+  /* Add any other styles for the content section */
+  width: 80%;
+}
+
+.Filter-wrapper {
+  width: 15em; /* Adjust the width as needed */
+  padding: 1%;
+  box-sizing: border-box;
+}
+
+.Filter {
+  position: fixed;
+
+
+}
+
+
+.custom-link {
+  color: black; /* Set your desired text color */
+  text-decoration: none; /* Remove the default underline */
+  cursor: pointer; /* Show a pointer cursor on hover */
+  display: inline-block;
+  width: 100%;
+  text-align: center
+}
+
+.image-uploader {
+  width: 50px
+}
+
+.image-previews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the images horizontally */
+  gap: 16px; /* Add some spacing between images */
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow images to wrap to the next line if there's not enough space */
+  justify-content: center; /* Center images horizontally within the container */
+  margin-bottom: 10%;
+  margin-top: 5%;
+}
+
+.image-preview {
+  width: 31%; 
+  overflow: hidden; /* Ensure the image doesn't overflow its container */
+  margin: 0.5%; /* Add margin around each image */
+  border-radius: 1em;
+}
+
+
+.preview-image {
+  max-width: 100%; /* Ensure the image fills the preview container */
+  max-height: 100%; /* Ensure the image fills the preview container */
+  object-fit: cover; /* Display the entire image within the container */
+}
+
+
+
+
+
+
+
+
+.image-section {
+    width: 100%;
+    height: 100vh;
+    background-size: cover; /* Fit the background image within the container */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-position: center; /* Center the background image */
+}
+
+.book-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Take the full width of the parent container */
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+  padding: 5px; /* Add padding for readability */
+}
+
+
+.scrollable-div {
+  overflow-y: auto;
+  max-height: 200px; /* Adjust the height as needed */
+}
+
+
+.calendar-info{
+  display: flex;
+  margin-top: 5%;
+  font-size: 1.5em;
+  
+}
+
+.description-update {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.description-update textarea {
+  width: 50%;
+  margin: 2em auto 1em auto; /* Center horizontally */
+
+}
+
+
+.interval-choice {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items */
+}
+
+.time-inputs {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Ensure it takes the full width of the container */
+  max-width: 400px; /* You can adjust this max-width to match the calendar's width */
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0; /* Start with opacity 0 for animation */
+  animation: fadeInText 1s forwards; /* Apply animation */
+}
+
+@keyframes fadeInText {
+  0% {
+    filter: blur(50px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}

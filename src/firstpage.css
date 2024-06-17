@@ -1,0 +1,26 @@
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.image-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.current {
+  z-index: 1;
+  opacity: 1;
+}
+
+.next {
+  z-index: 0;
+  opacity: 0;
+}

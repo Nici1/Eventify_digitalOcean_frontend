@@ -1,0 +1,34 @@
+.selector-container {
+
+  display: flex;
+  justify-content: center;
+  width:100%;
+ height: 1.5em;
+
+}
+
+.selector{
+display: flex;
+justify-content: center;
+border-color: black;
+border-radius: 1.5em;
+width: 30%;
+border-style: solid;
+}
+
+.options-size{
+width: 33.3%;
+padding: 1%;
+text-align: center;
+
+
+    
+}
+
+.my-venues{
+   border-right-color: gray;
+   border-right-style: solid;
+   border-left-color: gray;
+   border-left-style: solid;
+}
+
